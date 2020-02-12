@@ -16,7 +16,7 @@ PYTHON_INTERPRETER = {{ cookiecutter.python_interpreter }}
 ## Install Python Dependencies
 requirements: requirements.txt
 	$(PYTHON_INTERPRETER) -m pip install -U pip setuptools wheel
-	$(PYTHON_INTERPRETER) -m pip install -r requirements.txt
+	$(PYTHON_INTERPRETER) -m pip install --isolated -r requirements.txt
 	$(PYTHON_INTERPRETER) -m pip install --isolated -e .
 
 ## Delete all compiled Python files
