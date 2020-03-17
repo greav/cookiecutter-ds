@@ -10,12 +10,3 @@ repos:
     rev: stable
     hooks:
     -   id: flake8
--   repo: https://github.com/pre-commit/mirrors-yapf
-    rev: stable
-    hooks:
-    -   id: yapf
--   repo: git://github.com/FalconSocial/pre-commit-python-sorter
-    sha: 1.0.4
-    hooks:
-      - id: python-import-sorter
-        args: ['--check-only']
