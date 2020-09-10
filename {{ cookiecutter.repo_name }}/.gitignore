@@ -86,7 +86,6 @@ target/
 .mypy_cache/
 
 # Data folders
-/data/*
-!/data/README.md
+data/*
 models/*
 logs/*
