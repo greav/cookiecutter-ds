@@ -1,4 +1,22 @@
 [flake8]
-ignore = E203, E266, E501, W503, F403, F401
+ignore =
+    # E203 Whitespace before ':' (E203) - handled by black
+    E203,
+    # E501	Line too long (82 > 79 characters)
+    E501,
+    # W503	Line break occurred before a binary operator
+    W503
+select = E,W,F,C,B,B90,E800,Q,U,A,T,R,SIM,N,R
+
 max-line-length = 119
-select = B,C,E,F,W,T4,B9
+max-doc-length = 119
+max-complexity = 10
+max-cognitive-complexity = 10
+
+# flake8-quotes
+inline-quotes = double
+
+# flake8-unused-arguments
+unused-arguments-ignore-abstract-functions = True
+unused-arguments-ignore-stub-functions = True
+unused-arguments-ignore-variadic-names = True
