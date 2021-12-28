@@ -19,3 +19,16 @@ exclude = '''
 
 [tool.isort]
 profile = "black"
+
+[tool.mypy]
+namespace_packages = true
+disallow_incomplete_defs = true
+strict_equality = true
+no_implicit_optional = true
+show_error_context = true
+pretty = true
+install_types = true
+non_interactive = true
+warn_redundant_casts = true
+warn_unused_configs = true
+warn_unused_ignores = true

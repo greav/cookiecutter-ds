@@ -6,12 +6,13 @@ ignore =
     E501,
     # W503	Line break occurred before a binary operator
     W503
-select = E,W,F,C,B,B90,E800,Q,U,A,T,R,SIM,N,R
+select = E,W,F,C,B,B90,E800,Q,U,A,T,R,SIM,N
 
 max-line-length = 119
 max-doc-length = 119
-max-complexity = 10
-max-cognitive-complexity = 10
+max-complexity = 15
+max-cognitive-complexity = 15
+per-file-ignores = __init__.py: F401
 
 # flake8-quotes
 inline-quotes = double
